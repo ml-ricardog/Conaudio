@@ -21,13 +21,15 @@ def _assert_subprocess_run_called_correctly(mock_run):
         check=True
     )
 
+
 @patch("subprocess.run")
 def test_verify_ffmpeg_installation_success(mock_run):
     """Test that verify_ffmpeg_installation passes when ffmpeg is available."""
-    mock_run.return_value = Mock(returncode =0)
+    mock_run.return_value = Mock(returncode=0)
     verify_ffmpeg_installation()
 
     _assert_subprocess_run_called_correctly(mock_run)
+
 
 @patch("subprocess.run", side_effect=Exception("ffmpeg not found"))
 def test_verify_ffmpeg_installation_failure(mock_run):
