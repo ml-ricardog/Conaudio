@@ -1,0 +1,15 @@
+# JetBrains
+.idea
+
+# PyCache
+__pycache__/*
+*.pyc
+
+# macOS
+.DS_Store
+
+# Temp files
+temp_files/*
+
+# Sample files (will include eventually)
+sample_files/*
