@@ -13,3 +13,9 @@ temp_files/*
 
 # Sample files (will include eventually)
 sample_files/*
+
+# tox
+.tox/
+
+# Sphinx docs (will include eventually)
+docs/
